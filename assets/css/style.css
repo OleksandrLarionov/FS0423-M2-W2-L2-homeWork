@@ -19,3 +19,7 @@ header .hero p {
 	border: none;
 	background-color: transparent;
 }
+.logo {
+	width: 50px;
+	height: 50px;
+}
