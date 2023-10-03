@@ -1,8 +1,13 @@
-const firstFourImages = document.getElementsByClassName("article_four > .card");
-const firstFourImagesArray = Array.from(firstFourImages);
+const firstFourImages = document.getElementsByClassName("article_four");
+const lastSixImages = document.getElementsByClassName("central_content");
 
-firstFourImagesArray.forEach((image, i) => {
-	image[i].addEventListener("click", (e) => {
-		firstFourImagesArray[i].classList.toggle("invisible");
-	});
+const press = document.getElementById("press");
+const six = document.getElementById("six");
+console.log(six);
+console.log(lastSixImages);
+press.addEventListener("click", (e) => {
+	firstFourImages[0].classList.toggle("invisible");
+});
+six.addEventListener("click", (e) => {
+	lastSixImages[0].classList.toggle("invisible");
 });
